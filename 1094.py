@@ -5,14 +5,14 @@ i=1
 
 
 while i<=n:
-    animal = input()
+    a,b=map(str,input().split(' '))
 
-    if animal[1] == 'C':
-        c= c + int(animal[0])
-    elif animal[1] == 'R':
-        r=r + int(animal[0])
+    if b == 'C':
+        c = c + int(a)
+    elif b == 'R':
+        r=r + int(a)
     else:
-        s= s + int(animal[0])
+        s= s + int(a)
     i+=1
 
 total = c+r+s
@@ -25,7 +25,7 @@ print(f'Total de coelhos: {c}')
 print(f'Total de ratos: {r}')
 print(f'Total de sapos: {s}')
 
-print('Percentual de coelhos: %.2lf %'%pc)
-print('Percentual de ratos: %.2lf %'%pr)
-print('Percentual de sapos: %.2lf %'% ps)
+print(f"Percentual de coelhos: {pc:.2f} %")
+print(f'Percentual de ratos: {pr:.2f} %')
+print(f'Percentual de sapos: {ps:.2f} %')
 
